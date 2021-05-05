@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: "Footer"
-}
+  name: 'Footer',
+};
 </script>
 
 <style scoped>
 .footer {
-  background: #2D9AFF;
+  background: #2d9aff;
   color: white;
 }
 </style>

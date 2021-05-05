@@ -1,9 +1,7 @@
 <template>
   <div class="navbar">
     <div class="px-14 py-6 flex justify-between container mx-auto">
-      <div>
-        ComPro // MiniProject
-      </div>
+      <div>ComPro // MiniProject</div>
       <div>
         <div class="hidden md:flex space-x-14">
           <router-link to="/">Home</router-link>
@@ -18,10 +16,8 @@
 
 <script>
 export default {
-  name: "Navbar"
-}
+  name: 'Navbar',
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

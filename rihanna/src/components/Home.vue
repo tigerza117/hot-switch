@@ -4,21 +4,26 @@
       <div class="logo mx-auto md:mx-0">
         <img alt="logo" src="../assets/logo.png" />
       </div>
-      <div class="title text-6xl font-bold text-center md:text-left xl:text-9xl">HOT k</div>
+      <div
+        class="title text-6xl font-bold text-center md:text-left xl:text-9xl"
+      >
+        HOT k
+      </div>
       <p class="description break-words md:w-1/2">
-        A new way to control your life. Power of controlling your electronic devices in your phone, anywhere, that have an internet.
+        A new way to control your life. Power of controlling your electronic
+        devices in your phone, anywhere, that have an internet.
       </p>
       <div class="links space-x-2 flex justify-center md:justify-start">
         <a class="flex github items-center space-x-2">
-          <img alt="github" src="../assets/github.svg"/>
+          <img alt="github" src="../assets/github.svg" />
           <p>Github</p>
         </a>
         <a class="flex document items-center space-x-2">
-          <img alt="document" src="../assets/document.svg"/>
+          <img alt="document" src="../assets/document.svg" />
           <p>Document</p>
         </a>
         <a class="flex dashboard items-center space-x-2">
-          <img alt="dashboard" src="../assets/dashboard.svg"/>
+          <img alt="dashboard" src="../assets/dashboard.svg" />
           <p>Dashboard</p>
         </a>
       </div>
@@ -33,8 +38,8 @@
 
 <script>
 export default {
-  name: "Home"
-}
+  name: 'Home',
+};
 </script>
 
 <style scoped>
@@ -46,12 +51,12 @@ export default {
   padding: 5px 10px;
 }
 .links .github {
-  border: 4px solid #7D2DFF;
+  border: 4px solid #7d2dff;
 }
 .links .document {
   border: 4px solid black;
 }
 .links .dashboard {
-  border: 4px solid #2D9AFF;
+  border: 4px solid #2d9aff;
 }
 </style>
