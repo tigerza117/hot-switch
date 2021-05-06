@@ -197,13 +197,21 @@ export default {
         input: 'password',
         inputLabel: 'DeviceID',
         inputPlaceholder: 'Enter your deviceID',
+        showCancelButton: true,
       });
+      if (!id) {
+        return;
+      }
       const { value: name } = await swal.fire({
         title: 'Enter your device name',
         input: 'text',
         inputLabel: 'Device name',
         inputPlaceholder: 'Enter your device name',
+        showCancelButton: true,
       });
+      if (!name) {
+        return;
+      }
 
       if (id && name) {
         const db = firebase.firestore();
