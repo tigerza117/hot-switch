@@ -1,7 +1,7 @@
 <template>
   <div class="container m-auto login rounded">
     <div class="logo">
-      <img alt="logo" class="mx-auto" src="../assets/logo.png"/>
+      <img alt="logo" class="mx-auto" src="../assets/logo.png" />
     </div>
     <div>
       <section id="firebaseui-auth-container"></section>
@@ -10,30 +10,28 @@
 </template>
 
 <script>
-import firebase from "firebase/app";
-import * as firebaseui from "firebaseui";
-import "firebaseui/dist/firebaseui.css";
+import firebase from 'firebase';
+import * as firebaseui from 'firebaseui';
+import 'firebaseui/dist/firebaseui.css';
 export default {
-  name: "Login",
+  name: 'Login',
   mounted() {
     let ui = new firebaseui.auth.AuthUI(firebase.auth());
     if (ui) {
       let uiConfig = {
-        signInSuccessUrl: "/dashboard",
-        signInOptions: [
-            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        ],
+        signInSuccessUrl: '/dashboard',
+        signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
         tosUrl: '<your-tos-url>',
         // Privacy policy url/callback.
         privacyPolicyUrl: function () {
-          window.location.assign('<your-privacy-policy-url>')
-        }
+          window.location.assign('<your-privacy-policy-url>');
+        },
+        signInFlow: 'popup',
       };
-      ui.start("#firebaseui-auth-container", uiConfig);
+      ui.start('#firebaseui-auth-container', uiConfig);
     }
-
-  }
-}
+  },
+};
 </script>
 
 <style scoped>

@@ -1,18 +1,17 @@
 <template>
   <div class="m-auto notfound">
-    <lottie-animation path="lotties/404.json"
-    />
+    <lottie-animation path="lotties/404.json" />
   </div>
 </template>
 
 <script>
-import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue"; // import lottie-vuejs
+import LottieAnimation from 'lottie-vuejs/src/LottieAnimation.vue'; // import lottie-vuejs
 export default {
-  name: "Page404",
+  name: 'Page404',
   components: {
-    LottieAnimation
+    LottieAnimation,
   },
-}
+};
 </script>
 
 <style scoped>
