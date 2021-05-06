@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="px-8 py-6 md:flex justify-between container mx-auto">
       <div class="flex w-full justify-between">
-        <router-link to="/">ComPro // MiniProject</router-link>
+        <router-link class="py-2" to="/">ComPro // MiniProject</router-link>
         <div class="md:hidden">
           <i class="fas fa-bars" @click="show = !show" />
         </div>
