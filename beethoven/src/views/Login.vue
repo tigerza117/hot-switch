@@ -19,7 +19,7 @@ export default {
     let ui = new firebaseui.auth.AuthUI(firebase.auth());
     if (ui) {
       let uiConfig = {
-        signInSuccessUrl: '/dashboard',
+        signInSuccessUrl: '/',
         signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
         tosUrl: '<your-tos-url>',
         // Privacy policy url/callback.

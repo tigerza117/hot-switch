@@ -7,7 +7,7 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     {
-      path: '/dashboard',
+      path: '',
       component: Dashboard,
       meta: {
         auth: true,
@@ -44,7 +44,7 @@ router.beforeEach((to, from, next) => {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         next({
-          path: '/dashboard',
+          path: '/',
         });
       } else {
         next();
