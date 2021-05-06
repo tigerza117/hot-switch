@@ -1,8 +1,6 @@
 <template>
   <div class="w-full">
-    <div class="flex mx-auto w-72">
-      <img alt="logo" src="../assets/logo.png" />
-    </div>
+    <img alt="logo" class="h-72 flex mx-auto" src="../assets/logo.png" />
     <div class="team w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
       <Avatar
         v-bind="person"
@@ -16,7 +14,7 @@
 <script>
 const teams = [
   {
-    name: 'Noppawan Pakisee',
+    name: 'Noppawan Pakinsee',
     no: '63070092',
     position: 'Developer',
   },
