@@ -7,7 +7,7 @@
       <div
         class="title text-6xl font-bold text-center md:text-left xl:text-9xl"
       >
-        HOT k
+        HOT SWITCH
       </div>
       <p class="description break-words md:w-1/2">
         A new way to control your life. Power of controlling your electronic
