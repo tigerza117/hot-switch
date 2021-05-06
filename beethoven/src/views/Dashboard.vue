@@ -26,7 +26,9 @@
           >
             {{ item.name }}
           </div>
-          <div class="bg-white rounded-t p-4 px-6" @click="add">+</div>
+          <div class="bg-white rounded-t p-4 px-6 cursor-pointer" @click="add">
+            +
+          </div>
         </div>
       </div>
     </div>
