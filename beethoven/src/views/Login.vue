@@ -1,16 +1,18 @@
 <template>
-  <div class="container m-auto login rounded">
-    <div class="logo">
-      <img alt="logo" class="mx-auto" src="../assets/logo.png" />
-    </div>
-    <div>
-      <section id="firebaseui-auth-container"></section>
+  <div class="app flex">
+    <div class="container m-auto w-auto bg-white rounded">
+      <div class="logo">
+        <img alt="logo" class="mx-auto h-full" src="../assets/logo.png" />
+      </div>
+      <div>
+        <section id="firebaseui-auth-container"></section>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import * as firebaseui from 'firebaseui';
 import 'firebaseui/dist/firebaseui.css';
 export default {
@@ -35,14 +37,11 @@ export default {
 </script>
 
 <style scoped>
-.login {
-  background: white;
-  width: auto;
+.app {
+  background: #ecf0f1;
+  height: 100vh;
 }
 .logo {
   height: 200px;
-}
-.logo img {
-  height: 100%;
 }
 </style>
