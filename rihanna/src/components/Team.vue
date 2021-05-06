@@ -30,7 +30,7 @@ const teams = [
   },
   {
     name: 'Santakorn Wongsiripa',
-    no: '63070127',
+    no: '63070174',
     position: 'Writer',
   },
 ];
