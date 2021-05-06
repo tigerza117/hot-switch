@@ -3,10 +3,10 @@
     <div class="text-2xl font-semibold">
       {{ name }}
     </div>
-    <div class="text-4xl font-bold">
+    <div class="text-4xl font-bold my-8">
       {{ state ? 'ON' : 'OFF' }}
     </div>
-    <div class="mt-16">
+    <div class="mt-36">
       <img
         class="mx-auto rounded-full btn"
         :class="{ enable: state }"

@@ -32,8 +32,8 @@
     </div>
     <div class="flex-grow flex mx-auto container">
       <div v-if="device" class="w-full m-auto">
-        <div class="text-center text-4xl font-bold my-6">
-          {{ device.name }}
+        <div class="text-center text-4xl font-bold mt-16 xl:-mt-16">
+          {{ device.name.toUpperCase() }}
         </div>
         <div
           class="team w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mb-16"
@@ -186,7 +186,7 @@ export default {
         .doc(data.deviceId)
         .onSnapshot((doc) => {
           this.switches = doc.data().switches.map((sw, index) => {
-            return { name: `Light Bulb ${index}`, port: index, state: sw };
+            return { name: `Light Bulb ${index + 1}`, port: index, state: sw };
           });
           this.device = { ...data, channel: doc.data().channel };
         });
