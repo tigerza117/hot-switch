@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full p-10 text-center" @click="$emit('call')">
+  <div class="w-full p-10 text-center">
     <div class="text-2xl font-semibold">
       {{ name }}
     </div>
@@ -8,7 +8,8 @@
     </div>
     <div class="mt-36">
       <img
-        class="mx-auto rounded-full btn"
+        @click="$emit('call')"
+        class="mx-auto rounded-full btn cursor-pointer"
         :class="{ enable: state }"
         alt="btn"
         src="../assets/button.svg"
